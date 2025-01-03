@@ -44,9 +44,11 @@ def letters(guess):
     # Checks for 1
     for i in range(5):
         if guess[i] in ans:
-            in_ans[i] = 1
-            index = ans.index(guess[i])
-            ans = ans[0:index] + ' ' + ans[index + 1:]
+            # Prevent overwriting if multiple of same letter
+            if in_ans[i] != 2:
+                in_ans[i] = 1
+                index = ans.index(guess[i])
+                ans = ans[0:index] + ' ' + ans[index + 1:]
     return in_ans
 
 
