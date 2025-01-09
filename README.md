@@ -84,4 +84,4 @@ def letters(guess):
     return in_ans
 ```
 ## Acknowledgements
-As mentioned above, the 5-letter dictionary is from [Schmookey](https://gist.github.com/shmookey/b28e342e1b1756c4700f42f17102c2ff)
+The 5-letter dictionary is from [Schmookey](https://gist.github.com/shmookey/b28e342e1b1756c4700f42f17102c2ff)
